@@ -1,0 +1,54 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+    <div class="text-center">
+        <h1>Person Editor</h1>
+        <h3>Add Person</h3>
+        <form asp-page-handler="add" method="post">
+            <table class="table-bordered">
+                <tbody>
+                    <tr>
+                        <td><input name="firstName" type="text" id="AddFirstNameTextbox" /></td>
+                        <td><input name="lastName" type="text" id="AddLastnameTextbox" /></td>
+                        <td>
+
+                            <button id="AddButton">Add</button>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <br />
+        <h3>Person List</h3>
+        @foreach (var person in Model._people)
+        {
+            <div style="clear:left">
+                <form asp-page-handler="update" method="post">
+                    <div style="display:inline; float:left"><input name="firstName" type="text" value="@person.firstName" id="@person.id FirstNameTextbox" /></div>
+                    <div style="display:inline; float:left"><input name="lastName" type="text" value="@person.lastName" id="@person.id LastnameTextbox" /></div>
+
+                    <div style="display:inline; float:left">
+                        <button style="display:inline; float:left" id="@person.id UpdateButton">Update</button>
+                        <input type="hidden" name="id" value="@person.id" />
+                    </div>
+                </form>
+
+                <form asp-page-handler="delete" method="post">
+                    <button style="display:inline; float:left" id="@person.id DeleteButton">Delete</button>
+                    <input type="hidden" name="id" value="@person.id" />
+                </form>
+            </div>
+        }
+        <br />
+        <h4 style="clear:left">Search Person</h4>
+        <form asp-page-handler="search" method="post" style="float:left">
+            <div>Id:<input type="text" name="id" style="width:3em" /> <button id="searchButton">Search</button> </div><br />
+            <div style="display:inline; float:left">
+                <input type="text" value="@Model.searchName" />                 
+            </div>
+        </form>
+    </div>

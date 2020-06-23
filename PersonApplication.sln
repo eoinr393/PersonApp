@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonWebAPI", "PersonWebAPI\PersonWebAPI.csproj", "{ADD2265D-AB8D-4D77-9ADD-512B123031E9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonWebApp", "PersonWebApp\PersonWebApp.csproj", "{C2268BE1-14EB-4062-B91E-8F99F5F0E14E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADD2265D-AB8D-4D77-9ADD-512B123031E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADD2265D-AB8D-4D77-9ADD-512B123031E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADD2265D-AB8D-4D77-9ADD-512B123031E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADD2265D-AB8D-4D77-9ADD-512B123031E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2268BE1-14EB-4062-B91E-8F99F5F0E14E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2268BE1-14EB-4062-B91E-8F99F5F0E14E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2268BE1-14EB-4062-B91E-8F99F5F0E14E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2268BE1-14EB-4062-B91E-8F99F5F0E14E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91561CF3-4E50-4953-B74A-3083B43DA9B5}
+	EndGlobalSection
+EndGlobal
